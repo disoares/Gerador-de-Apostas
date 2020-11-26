@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_lotofacil"
+        android:title="@string/menu_lotofacil"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_megasena"
+        android:title="@string/menu_megasena"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_quina"
+        android:title="@string/menu_quina"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_duplasenha"
+        android:title="@string/menu_duplasena"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_lotomania"
+        android:title="@string/menu_lotomania"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_timemania"
+        android:title="@string/menu_timemania"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_diadesorte"
+        android:title="@string/menu_diadesorte"
+        app:showAsAction="never"
+        />
+</menu>

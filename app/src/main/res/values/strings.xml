@@ -1,0 +1,145 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Sua Sorte</string>
+
+    <!-- Button -->
+    <string name="button_gerar_aposta">Gerar Aposta</string>
+
+    <!-- TextView -->
+    <string name="text_00">00</string>
+    <string name="text_resultado_lotofacil">Resultado Lotofácil</string>
+    <string name="text_resultado_megasena">Resultado Mega-Sena</string>
+    <string name="text_resultado_quina">Resultado Quina</string>
+    <string name="text_resultado_duplasena">Resultado Dupla-Sena</string>
+    <string name="text_resultado_lotomania">Resultado Lotomania</string>
+    <string name="text_resultado_timemania">Resultado Timemania</string>
+    <string name="text_resultado_diadesorte">Resultado Dia de Sorte</string>
+    <string name="text_cabecalho">Concurso</string>
+    <string name="text_1sorteio">1° Sorteio</string>
+    <string name="text_2sorteio">2° Sorteio</string>
+    <string name="text_incognita">---------</string>
+
+    <!-- Menu -->
+    <string name="menu_lotofacil">Lotofácil</string>
+    <string name="menu_megasena">Mega-Sena</string>
+    <string name="menu_quina">Quina</string>
+    <string name="menu_duplasena">Dupla-Sena</string>
+    <string name="menu_lotomania">Lotomania</string>
+    <string name="menu_timemania">Timemania</string>
+    <string name="menu_diadesorte">Dia de Sorte</string>
+
+    <!-- Textos -->
+    <string name="texto_sair_da_aplicacao">Sair da Aplicação</string>
+    <string name="texto_sair_da_aplicacao_certeza">Tem certeza que deseja sair da aplicação?</string>
+    <string name="texto_sim">Sim</string>
+    <string name="texto_nao">Não</string>
+    <string name="texto_cabecalho_lotofacil">Lotofácil / Concurso</string>
+    <string name="texto_cabecalho_diadesorte">Dia de Sorte / Concurso</string>
+    <string name="texto_cabecalho_duplasena">Dupla-Sena / Concurso</string>
+    <string name="texto_cabecalho_lotomania">Lotomania / Concurso</string>
+    <string name="texto_cabecalho_megasena">Mega-Sena / Concurso</string>
+    <string name="texto_cabecalho_quina">Quina / Concurso</string>
+    <string name="texto_cabecalho_timemania">Timemania / Concurso</string>
+    <string name="texto_semconexao">Sem conexão! O seu resultado pode não estar atualizado.</string>
+    <string name="texto_carregamento">Carregamento...</string>
+    <string name="texto_aguarde">Por favor, aguarde.</string>
+
+    <!-- Meses -->
+    <string name="mes_janeiro">Janeiro</string>
+    <string name="mes_fevereiro">Fevereiro</string>
+    <string name="mes_marco">Março</string>
+    <string name="mes_abril">Abril</string>
+    <string name="mes_maio">Maio</string>
+    <string name="mes_junho">Junho</string>
+    <string name="mes_julho">Julho</string>
+    <string name="mes_agosto">Agosto</string>
+    <string name="mes_setembro">Setembro</string>
+    <string name="mes_outubro">Outubro</string>
+    <string name="mes_novembro">Novembro</string>
+    <string name="mes_dezembro">Dezembro</string>
+
+    <!-- Times -->
+    <string name="time_abc_rn">ABC/RN</string>
+    <string name="time_america_mg">América/MG</string>
+    <string name="time_america_rj">América/RJ</string>
+    <string name="time_america_rn">América/RN</string>
+    <string name="time_americano_rj">Americano/RJ</string>
+    <string name="time_atletico_go">Atlético/GO</string>
+    <string name="time_atletico_mg">Atlético/MG</string>
+    <string name="time_atletico_pr">Atlético/PR</string>
+    <string name="time_avai_sc">Avaí/SC</string>
+    <string name="time_bahia_ba">Bahia/BA</string>
+    <string name="time_bangu_rj">Bangu/RJ</string>
+    <string name="time_barueri_sp">Barueri/SP</string>
+    <string name="time_botafogo_pb">Botafogo/PB</string>
+    <string name="time_botafogo_rj">Botafogo/RJ</string>
+    <string name="time_bragantino_rj">Bragantino/RJ</string>
+    <string name="time_brasiliense_df">Brasiliense/DF</string>
+    <string name="time_ceara_ce">Ceará/CE</string>
+    <string name="time_corinthians_sp">Corinthians/SP</string>
+    <string name="time_coritiba_pr">Coritiba/PR</string>
+    <string name="time_crb_al">CRB/AL</string>
+    <string name="time_criciuma_sc">Criciúma/SC</string>
+    <string name="time_cruzeiro_mg">Cruzeiro/MG</string>
+    <string name="time_csa_al">CSA/AL</string>
+    <string name="time_desportiva_es">Desportiva/ES</string>
+    <string name="time_figueirense_sc">Figueirense/SC</string>
+    <string name="time_flamengo_rj">Flamengo/RJ</string>
+    <string name="time_fluminense_rj">Fluminense/RJ</string>
+    <string name="time_fortaleza_ce">Fortaleza/CE</string>
+    <string name="time_gama_df">Gama/DF</string>
+    <string name="time_goias_go">Goiás/GO</string>
+    <string name="time_gremio_rs">Grêmio/RS</string>
+    <string name="time_guarani_sp">Guarani/SP</string>
+    <string name="time_inter_limeira_sp">Inter Limeira/SP</string>
+    <string name="time_internacional_rs">Internacional/RS</string>
+    <string name="time_ipatinga_mg">Ipatinga/MG</string>
+    <string name="time_ituano_sp">Ituano/SP</string>
+    <string name="time_ji_parana_ro">Ji-Paraná/RO</string>
+    <string name="time_joinville_sc">Joinville/SC</string>
+    <string name="time_juventude_rs">Juventude/RS</string>
+    <string name="time_juventus_sp">Juventus/SP</string>
+    <string name="time_londrina_pr">Londrina/PR</string>
+    <string name="time_marilia_sp">Marília/SP</string>
+    <string name="time_mixto_mt">Mixto/MT</string>
+    <string name="time_moto_clube_ma">Moto Clube/MA</string>
+    <string name="time_nacional_am">Nacional/AM</string>
+    <string name="time_nautico_pe">Náutico/PE</string>
+    <string name="time_olaria_rj">Olaria/RJ</string>
+    <string name="time_operario_ms">Operário/MS</string>
+    <string name="time_palmas_to">Palmas/TO</string>
+    <string name="time_palmeiras_sp">Palmeiras/SP</string>
+    <string name="time_parana_pr">Paraná/PR</string>
+    <string name="time_paulista_sp">Paulista/SP</string>
+    <string name="time_paysandu_pa">Paysandú/PA</string>
+    <string name="time_ponte_preta_sp">Ponte Preta/SP</string>
+    <string name="time_port_desport_sp">Port Desport/SP</string>
+    <string name="time_ramo_pa">Ramo/PA</string>
+    <string name="time_rio_branco_ac">Rio Branco/AC</string>
+    <string name="time_rio_branco_es">Rio Branco/ES</string>
+    <string name="time_river_pi">River/PI</string>
+    <string name="time_roraima_rr">Roraima/RR</string>
+    <string name="time_sampaio_correa_ma">Sampaio Corrêa/MA</string>
+    <string name="time_santa_cruz_pe">Santa Cruz/PE</string>
+    <string name="time_santo_andre_sp">Santo André/SP</string>
+    <string name="time_santos_sp">Santos/SP</string>
+    <string name="time_sao_caetano_sp">São Caetano/SP</string>
+    <string name="time_sao_paulo_sp">São Paulo/SP</string>
+    <string name="time_sao_raimundo_am">São Raimundo/AM</string>
+    <string name="time_sergipe_se">Sergipe/SE</string>
+    <string name="time_sport_pe">Sport/PE</string>
+    <string name="time_treze_pb">Treze/PB</string>
+    <string name="time_tuna_luso_pa">Tuna Luso/PA</string>
+    <string name="time_uberlandia_mg">Uberlândia/MG</string>
+    <string name="time_uniao_barbarense_sp">União Barbarense/SP</string>
+    <string name="time_uniao_sao_joao_sp">União São João/SP</string>
+    <string name="time_vasco_rj">Vasco/RJ</string>
+    <string name="time_vila_nova_go">Vila Nova/GO</string>
+    <string name="time_vila_nova_mg">Vila Nova/MG</string>
+    <string name="time_vitoria_ba">Vitória/BA</string>
+    <string name="time_xv_piracicaba_sp">XV Piracicaba/SP</string>
+    <string name="time_ypiranga_ap">Ypiranga/AP</string>
+
+
+
+</resources>
