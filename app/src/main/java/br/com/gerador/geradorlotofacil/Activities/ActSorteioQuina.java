@@ -205,26 +205,21 @@ public class ActSorteioQuina extends AppCompatActivity {
          */
         public void parseJson(String json){
             try {
-                JSONObject array = new JSONObject(json); // pega todo o resultado
-                JSONObject infosLoteria = new JSONObject(array.getString("data")); // pega somente os dados do sorteio
-                JSONObject dezenasSorteadas = new JSONObject(infosLoteria.getString("drawing"));
 
-                String concurso = infosLoteria.getString("draw_number");
-                String data = infosLoteria.getString("draw_date");
-                String dezenas = dezenasSorteadas.getString("draw");
+                // Retira o primeiro e o último caracter do json
+                json = json.substring(1, json.length() - 1);
+                JSONObject obj = new JSONObject(json);
 
-                // Formata a data
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                Date data2 = sdf.parse(data);
-                sdf.applyPattern("dd/MM/yyyy");
-                String dataFormatada = sdf.format(data2);
+                String concurso = obj.getString("Concurso");
+                concurso = concurso.substring(concurso.length() - 4, concurso.length());
+                String data = obj.getString("DataConcurso").replace("(", "").replace(")", "");
+                String dezenas = obj.getString("Numeros");
+                String valor = obj.getString("ValorAcumulado");
 
                 // Chama o método responsável por preencher os resultados e mostrar o cabeçalho
-                preencheResultado(concurso, dataFormatada, dezenas);
+                preencheResultado(concurso, data, dezenas);
 
             } catch (JSONException e) {
-                e.printStackTrace();
-            }catch (ParseException e){
                 e.printStackTrace();
             }
         }
@@ -249,11 +244,11 @@ public class ActSorteioQuina extends AppCompatActivity {
             textCabecalho.setText(getResources().getString(R.string.texto_cabecalho_quina) + " " + concurso + " (" + data + ")");
 
             // Preenche os números
-            textNumero1.setText(String.format("%02d", Integer.parseInt(array[0])));
-            textNumero2.setText(String.format("%02d", Integer.parseInt(array[1])));
-            textNumero3.setText(String.format("%02d", Integer.parseInt(array[2])));
-            textNumero4.setText(String.format("%02d", Integer.parseInt(array[3])));
-            textNumero5.setText(String.format("%02d", Integer.parseInt(array[4])));
+            textNumero1.setText(String.format("%02d", Integer.parseInt(array[0].replace("\"", ""))));
+            textNumero2.setText(String.format("%02d", Integer.parseInt(array[1].replace("\"", ""))));
+            textNumero3.setText(String.format("%02d", Integer.parseInt(array[2].replace("\"", ""))));
+            textNumero4.setText(String.format("%02d", Integer.parseInt(array[3].replace("\"", ""))));
+            textNumero5.setText(String.format("%02d", Integer.parseInt(array[4].replace("\"", ""))));
         }
     }
 

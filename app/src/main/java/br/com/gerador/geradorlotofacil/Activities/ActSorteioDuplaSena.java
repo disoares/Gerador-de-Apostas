@@ -34,7 +34,7 @@ import br.com.gerador.geradorlotofacil.R;
 public class ActSorteioDuplaSena extends AppCompatActivity {
 
     // Constantes
-    private final String LOTERIA = "dupla_sena";
+    private final String LOTERIA = "dupla-sena";
     private String url;
 
     /* Toolbar */
@@ -230,28 +230,21 @@ public class ActSorteioDuplaSena extends AppCompatActivity {
          */
         public void parseJson(String json){
             try {
-                JSONObject array = new JSONObject(json); // pega todo o resultado
-                JSONObject infosLoteria = new JSONObject(array.getString("data")); // pega somente os dados do sorteio
-                JSONObject dezenasSorteadas = new JSONObject(infosLoteria.getString("drawing"));
 
-                String concurso = infosLoteria.getString("draw_number");
-                String data = infosLoteria.getString("draw_date");
-                String dezenas = dezenasSorteadas.getString("first_draw") + "," + dezenasSorteadas.getString("second_draw");
+                // Retira o primeiro e o último caracter do json
+                json = json.substring(1, json.length() - 1);
+                JSONObject obj = new JSONObject(json);
 
-                Log.d("DEZENAS", dezenas);
-
-                // Formata a data
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-                Date data2 = sdf.parse(data);
-                sdf.applyPattern("dd/MM/yyyy");
-                String dataFormatada = sdf.format(data2);
+                String concurso = obj.getString("Concurso");
+                concurso = concurso.substring(concurso.length() - 4, concurso.length());
+                String data = obj.getString("DataConcurso").replace("(", "").replace(")", "");
+                String dezenas = obj.getString("Numeros");
+                String valor = obj.getString("ValorAcumulado");
 
                 // Chama o método responsável por preencher os resultados e mostrar o cabeçalho
-                preencheResultado(concurso, dataFormatada, dezenas);
+                preencheResultado(concurso, data, dezenas);
 
             } catch (JSONException e) {
-                e.printStackTrace();
-            }catch (ParseException e){
                 e.printStackTrace();
             }
         }
@@ -276,18 +269,18 @@ public class ActSorteioDuplaSena extends AppCompatActivity {
             textCabecalho.setText(getResources().getString(R.string.texto_cabecalho_duplasena) + " " + concurso + " (" + data + ")");
 
             // Preenche os números
-            textNumero1.setText(String.format("%02d", Integer.parseInt(array[0])));
-            textNumero2.setText(String.format("%02d", Integer.parseInt(array[1])));
-            textNumero3.setText(String.format("%02d", Integer.parseInt(array[2])));
-            textNumero4.setText(String.format("%02d", Integer.parseInt(array[3])));
-            textNumero5.setText(String.format("%02d", Integer.parseInt(array[4])));
-            textNumero6.setText(String.format("%02d", Integer.parseInt(array[5])));
-            textNumero7.setText(String.format("%02d", Integer.parseInt(array[6])));
-            textNumero8.setText(String.format("%02d", Integer.parseInt(array[7])));
-            textNumero9.setText(String.format("%02d", Integer.parseInt(array[8])));
-            textNumero10.setText(String.format("%02d", Integer.parseInt(array[9])));
-            textNumero11.setText(String.format("%02d", Integer.parseInt(array[10])));
-            textNumero12.setText(String.format("%02d", Integer.parseInt(array[11])));
+            textNumero1.setText(String.format("%02d", Integer.parseInt(array[0].replace("\"", ""))));
+            textNumero2.setText(String.format("%02d", Integer.parseInt(array[1].replace("\"", ""))));
+            textNumero3.setText(String.format("%02d", Integer.parseInt(array[2].replace("\"", ""))));
+            textNumero4.setText(String.format("%02d", Integer.parseInt(array[3].replace("\"", ""))));
+            textNumero5.setText(String.format("%02d", Integer.parseInt(array[4].replace("\"", ""))));
+            textNumero6.setText(String.format("%02d", Integer.parseInt(array[5].replace("\"", ""))));
+            textNumero7.setText(String.format("%02d", Integer.parseInt(array[6].replace("\"", ""))));
+            textNumero8.setText(String.format("%02d", Integer.parseInt(array[7].replace("\"", ""))));
+            textNumero9.setText(String.format("%02d", Integer.parseInt(array[8].replace("\"", ""))));
+            textNumero10.setText(String.format("%02d", Integer.parseInt(array[9].replace("\"", ""))));
+            textNumero11.setText(String.format("%02d", Integer.parseInt(array[10].replace("\"", ""))));
+            textNumero12.setText(String.format("%02d", Integer.parseInt(array[11].replace("\"", ""))));
         }
     }
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GeradorLotofacil.iml" filepath="$PROJECT_DIR$/GeradorLotofacil.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GeradorLotofacil.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GeradorLotofacil.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gerador-de-Apostas.iml" filepath="$PROJECT_DIR$/.idea/modules/Gerador-de-Apostas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gerador-de-Apostas.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gerador-de-Apostas.app.iml" />
     </modules>
   </component>
 </project>
